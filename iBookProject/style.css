@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+html{
+    height: 100%;
+}
+
+
+body{
+    /*background-color: #9B9B7A;*/
+    background-color: #797D62;
+    background-size: cover;
+    background-attachment: local;
+}
+
+.all{
+margin-left: 200px;
+margin-right: 200px;
+width: 1024px;
+background-color: rgb(255,255, 255) ;
+
+
+}
+
+
+
+header{
+    height: 118px;
+   /* text-align: center;*/
+    background-color: #f1dca77a;
+    
+}
+
+nav{
+   /* background-color: #fcf0d17a;
+   background-color: #f1dca77a;*/
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    /*background-color: #797d628c;*/
+    background-color: #9b9b7a;
+   
+}
+main{
+
+    height: 2300px;
+    text-align: center;
+    padding-top: 40px;
+    
+    padding-right: 100px;
+    padding-left: 100px;
+  /*  background-color: #fcf0d17a;*/
+  background-color: #f1dca77a;
+}
+.log-l{     /* to fit the size of feedback page's main withe web site */
+    height: 1000px;
+}
+ .acss{   /* to fit the size of accessories page's main withe web site */
+    height: 2000px;
+}
+
+footer{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #9b9b7a49;
+    text-align: center;
+   
+}
+
+.logoo{
+    width: 130px ;
+    
+    height: 100px ;
+    padding-right: 60px;
+/*margin-right: 1000px;*/
+
+}
+
+.aa{
+    padding-left: 20px;
+ text-align: center;
+ color: #997B66;
+}
+
+.aaa{
+
+    text-align: center;
+    color: #F1DCA7;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+ .ddd img{  /*to style the home page image */
+    width: 100%; 
+}
+/*.................. all books pages ............*/
+
+.ro{   /* to give style for rows */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.cont{  /* to give style for contents */
+    max-width: 5000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col{    /* to give style for columns */
+    flex-basis: 25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col img{   /* to give style for images of books  */
+    width: 50%;
+}
+.col h4,p{    /* to give style for columns */
+    font-size: 15px;
+}
+.rate .fa{   /* to give style for stars rate of books*/
+    color: #ff523b;
+ }
+.col:hover{   /* to give color when hover the books product with mouse  */
+    color:#797D62;
+}
+
+
+.ro1{  /* to give style for  spesific rows */
+    justify-content: space-between;
+    margin: 100px auto 50px;
+    width: 25%;
+   padding-left: 60%;
+}
+select{   
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f9efd3;
+}
+.col button{  /* t give style for buttons that go to another pages */
+   border-radius: 5px;
+   
+}
+
+/*------ new modify -------*/
+.btn{
+    width: 80%;
+    background: none;
+    border: 2px solid #797d62 ;
+    border-radius: 5px;
+    vertical-align: middle; 
+    color: #797d62;
+    cursor: pointer;
+    padding: .67em .67em;
+}
+.btn-btn1{
+    width: 15%;
+    background: none;
+    border: 2px solid #797d62 ;
+   border-radius: 5px;
+    color: #797d62;
+    padding: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+/*----------form page -------------*/
+
+.login{
+    align-items: center;
+    padding: 40px;
+    margin: 50px;
+    margin-top: 150px;
+    background-color: rgb(245, 229, 189);
+    width: 200px;
+    height: 520px;
+    border: solid;
+    border-color: black;
+    width: 7.5cm;
+    box-shadow: 5px 10px hsl(69, 12%, 50%);
+    
+    /*flex-basis: 25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom: 50px;*/
+}
+
+#ibook {
+    color:  #797D62;
+    text-align: center;
+    /* width: 96%; */
+
+    font-size: 50px;
+}
+
+td {
+   border: black; 
+}
+
+/*.under{
+    border: solid;
+    border-color: hsla(0, 0%, 0%, 0) hsla(0, 0%, 0%, 0) hsl(60, 14%, 54%) hsla(0, 0%, 0%, 0) ; 
+    //background-color:  hsla(43, 73%, 90%, 0.478);
+}*/
+
+label {
+    text-align: left;
+    
+}
+
+
+
+a.tw:link , a.tw:visited{
+    border: solid;
+    border-color: #1DA1F2;
+    color: #1DA1F2;
+    border-radius: 12px;
+    width: 7px;
+    padding: 5px;
+    text-decoration: none;
+}
+a.tw:hover {
+    background-color: #1DA1F2;
+    color: white;
+
+}
+a.fac:link , a.fac:visited{  
+    border: solid;
+    border-color: #3B5998;
+    color: #3B5998;
+    border-radius: 12px;
+    
+    padding: 5px;
+    text-decoration: none;
+}
+a.fac:hover {
+    background-color: #3b5998;
+    color: white;
+    
+}
+a.gogle:link , a.gogle:visited{
+    border: solid;
+    border-color: #E83323;
+    color: #E83323;
+    border-radius: 12px;
+    padding: 5px;
+    text-decoration: none;
+}
+a.gogle:hover {
+    background-color: #e83323;
+    color: white;
+}
+
+
+b.reading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+label.Lable {
+    
+    margin-left:-30px ;
+    
+    
+}
+/* sound books */
+
+a.S:hover {
+    background-color: hsl(60, 14%, 70%);
+    text-decoration: none;
+}
+a.S:link , a.S:visited {
+    text-decoration: none;
+    
+}
+
+.qout {
+
+ font-size: large;
+ color:  hsl(60, 14%, 54%) ;
+
+}
+
+.feed{
+    align-items: center;
+    padding: 60px;
+    margin: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+    background-color: rgb(245, 229, 189);
+    /*width: 200px;*/
+    height: 700px;
+    border: solid;
+    border-color: black;
+    box-shadow: 5px 10px hsl(69, 12%, 50%);
+    width: 14cm;   
+}
+
+
+
+
+   
+      
+#fname,#lname, select, textarea {    
+    width: 100%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+  }    
+#mail, select, textarea {    
+    width: 100%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+  }    
+      
+  label {    
+    padding: 12px 12px 0 0;    
+    display: inline-block;    
+  }    
+      
+  input[type=submit] {    
+    background-color:#797D62;   
+    color: white;    
+    padding: 12px 20px;    
+    border: none;    
+    border-radius: 4px;    
+    cursor: pointer;    
+    float: right;    
+  }    
+      
+  input[type=submit]:hover {    
+    background-color: #45a049;    
+  }    
+      
+ 
+      
+  .col-25 {    
+    float: left;    
+    width: 25%;    
+    margin-top: 6px;    
+  }    
+      
+  .col-75 {    
+    float: left;    
+    width: 75%;    
+    margin-top: 6px;    
+  }    
+      
+  /* Clear floats after the columns */    
+  .row:after {    
+    content: "";    
+    display: table;    
+    clear: both;    
+  }   
+  
+  .select{
+      background-color: white;
+  }
+
+  /* ------ LOGIN POPUP------- */
+
+  .popup{  /* th give style for the popup of login box  */
+    background: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100%;
+   position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup1{ /* to give style for the popup of sign up box  */
+    background: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100%;
+   position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content{  /* to give style for the popup of login content  */
+      height: 500px;
+      width:400px;
+      background:#f9efd3 ;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .popup1-content{    /* to give style for the popup of sign up content  */
+    height: 700px;
+    width:500px;
+    background:#f9efd3 ;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
+  .remb{    /* to give style for the check box of remeber me */
+      margin-top: -26px;
+      margin-left:-60px ;
+      font-size:14px;
+  }
+
+.close{    /* the x sign for the login popup */
+    font-family: sans-serif;
+    color: #797D62;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    text-decoration: none;
+    cursor: pointer;   /* when the mouse hover it will change the cursor shape*/
+}
+
+  /* ------ FORM ------- */
+
+.from {
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contain{
+    place-items: center;
+    background-color: rgb(245, 229, 189);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgb(245, 229, 189);
+	overflow: hidden;
+	width: 500px;
+    max-width: 100%;
+    height:600px;
+    border-color: black;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 100vh;*/
+    margin: 0;
+    padding-top: 0%;
+    border-radius: 4px;
+}
+
+.Create{
+	border-bottom: 1px solid #797D62;
+	background-color:  #f8eed5;
+    padding: 20px 40px;
+    color: #797D62;
+}
+
+.Create h2 {
+    margin: 0;
+}
+
+
+.form{
+    padding: 30px 40px;	
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formCheck{
+	margin-bottom: 10px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+    margin-top: 0;
+	position: relative;
+}
+
+.formCheck input {
+	border: 2px solid #F8EED5;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 2px;
+    width: 100%;  
+    
+}
+
+.formCheck.success input {
+	border-color: #2ecc71;
+}
+
+.formCheck.error input {
+	border-color: #e74c3c;
+}
+
+.formCheck i {
+	visibility: hidden;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+.formCheck.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.formCheck.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.formCheck small {
+	color: #e74c3c;
+	/*position: absolute;*/
+	/*bottom: 0;
+	left: 0;*/
+	visibility: hidden;
+}
+
+
+.under{
+
+    height: 30px;
+}
+.formCheck.error small {
+	visibility: visible;
+}
+
+.sub{
+    margin-right:90px ;
+    background-color:#797D62 ;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 50%;
+    height: 1cm;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    color: #f8eed5;
+	display: block;
+	font-family: inherit;
+	/*margin-top: 20px;*/
+}
+
+.form button {
+
+    background-color:#797D62 ;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 100%;
+    height: 1cm;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #f8eed5;
+	display: block;
+	font-family: inherit;
+	margin-top: 20px;
+}
+
+.log1 {
+    margin-left: 5cm;
+    margin-top: 3cm;
+}
+
+.log{
+    height: 800px;
+}

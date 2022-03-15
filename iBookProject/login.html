@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Shortcut Icon" href="images/newlogo.png" >
+    <link rel="Shortcut Icon" href="images/newlogo.png" >
+    <script src="script.js"></script>
+</head>
+<body>
+ 
+    <div class="all">
+<header>
+  <a href="index.html" target="_blank" >  <img src="images/newlogo.png" alt="logo/home" class="logoo" title="Home"></a><!-- to go to home page-->
+  &nbsp;
+  &nbsp;
+  <a class="aa" href="index.html">HOME</a> <!-- to go to home page-->
+    &nbsp;
+    &nbsp;
+    <a class="aa" href="Accessories.html"  target="_blank">ACCESSORIES SECTION</a> <!-- to go to accsesories page -->
+    &nbsp;
+    &nbsp;
+    <a class="aa" href="mailto:tootayahya@gmail.com?Subject=reservation"> CONTACT US </a> <!-- to show email in case user wnt to contact with us-->
+    
+    &nbsp;
+    &nbsp;
+    <a class="aa" href="login2.html" target="_blank">LOGIN</a>  <!-- to go to login page-->
+    &nbsp;
+    &nbsp;
+    <a class="aa" href="feedback.html" target="_blank">FEED BACK </a> <!-- to go to feedbak page-->
+    &nbsp;
+    &nbsp;
+    <a class="aa" href="#"><i class="fa fa-shopping-cart  fa-2x"  ></i></a>
+    &nbsp;
+</header>
+
+<nav>
+    <a class="aaa" href="scientificBooks.html" target="_blank"> scientific books  </a> <!-- to go to scientific books page-->
+    &nbsp;
+    &nbsp;
+    <a class="aaa" href="soundBook.html" target="_blank"> Audiobooks </a> <!-- to go to audiobooks page-->
+    &nbsp;
+    &nbsp;
+    <a class="aaa" href="books.html" target="_blank">  Translated novels </a> <!-- to go to translates books page-->
+    &nbsp;
+    &nbsp;
+    <a class="aaa" href="#">Literary books </a>
+    &nbsp;
+ 
+    
+</nav>
+<main>
+<div class="log">
+  <table > 
+    <tr>
+    <td>
+
+
+    <div class="login" style="height:650px;" >
+        <div class="Create" style="background-color: rgb(245, 229, 189);">
+            <h2>Create Account</h2>
+        </div>
+        <div class="contain">
+        <form class="form" id="form">
+            <h1 class="ibook">SIGN UP</h1> 
+            <div class="formCheck">
+              
+              <label>UserName</label>
+              <input  type="text" class="under"  size="10" id="UserName" name="UserName" placeholder="UserName" onfocus="changeColorfocus('UserName')"  onblur="changeColorblur('UserName')">
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>The user name cant be empty</small>
+            </div>
+            <div class="formCheck">
+              <label for="emailup" >Email</label>
+              <input class="under" onfocus="changeColorfocus('emailup')" onblur="changeColorblur('emailup')" type="email"  size="25" id="emailup" name="emailup" placeholder="example@example.com">
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>The email shouldn't be empty please </small>
+            </div>
+            <div class="formCheck">
+              <label  >Password</label>
+              <input class="under" type="password"  size="25" id="password1" name="password1" onfocus="changeColorfocus('password1')"  onblur="changeColorblur('password1')" placeholder="New password">
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>Enter a valid password </small>
+            </div>
+            <div class="formCheck">
+              <label for="password2" >Check Password</label>
+              <input type="password"   class="under" size="25" id="password2" name="password2" onfocus="changeColorfocus('password2')"  onblur="changeColorblur('password2')" placeholder="Enter password again">
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>Error massege</small>
+            </div>
+              <button>submit</button>
+          </form>
+        </div>
+        </div>
+  </td>
+  <td>
+ <h1>We are delighted that you have joined our digital library</h1>
+
+  </td>
+</tr>
+</table>
+
+
+</div>
+</main>
+<footer>
+    <p>Done by Sara,Bashair and Fatma<br>&copy;2020</p>
+</footer>
+    
+
+    <script>
+      // the form subimting condition script for the sign UP 
+  const formup = document.getElementById('form');
+  const userN = document.getElementById('UserName');
+  const email = document.getElementById('emailup') ; 
+  const password1 = document.getElementById('password1'); 
+  const password2 = document.getElementById('password2') ; 
+  //const lowerCaseLetters = /[a-z]/g;
+  //const upperCaseLetters = /[A-Z]/g;    
+  //const numbers = /[0-9]/g;
+  
+  formup.addEventListener('submit', e => {
+  e.preventDefault();
+  
+  checkInputs();
+  });
+  
+  function checkInputs() {
+  // trim to remove the whitespaces
+  const usernameValue = userN.value.trim();
+  const emailValue = email.value.trim();
+  const passwordValue = password1.value.trim();
+  const password2Value = password2.value.trim();
+  
+  
+  if(usernameValue == '' || usernameValue == null ) {
+      setErrorFor(userN, 'Username cannot be blank');
+  } else {
+      setSuccessFor(userN);
+  }
+  
+  if(emailValue === '') {
+      setErrorFor(email, 'Email cannot be blank');
+  } else if (!isEmail(emailValue)) {
+      setErrorFor(email, 'Not a valid email');
+  } else {
+      setSuccessFor(email);
+  }
+  
+  if(passwordValue == '') {
+      setErrorFor(password1, 'Password cannot be blank');
+  } else if (passwordValue.length <8 || passwordValue.length >20 ){
+      setErrorFor(password1, 'Password >20 or password < 8');
+  }/* else if (passwordValue.match(lowerCaseLetters) && passwordValue.match(upperCaseLetters) && passwordValue.match(numbers)){ 
+      setErrorFor(password1, 'Password should contain number and capital letter and small letter');
+  }*/
+  else {
+      setSuccessFor(password1);
+  }
+  
+  if(passwordValue != password2Value) {
+      setErrorFor(password2, 'Passwords does not match');
+  } else if (password2Value == '') {
+      setErrorFor(password2, 'pelase enter the check of password');
+  }else if (password2Value.length <8 || password2Value.length >20 ){
+      setErrorFor(password2, 'Password >20 or password < 8');
+  }
+   else{
+      setSuccessFor(password2);
+  }
+  if (usernameValue!= '' && emailValue!= '' && passwordValue!= '' && password1Value== passwordValue && (passwordValue.length >8 || passwordValue.length <20)){
+      alert("Welcome in our libarary " + usernameValue +" \n we are happy with you!");
+      close2();
+
+    
+  }
+  }
+  function setErrorFor(input, message) {
+  const formCheck = input.parentElement ; 
+  const small = formCheck.querySelector('small');
+  formCheck.className = 'formCheck error';
+  small.innerText = message;
+  }
+  
+  function setSuccessFor(input) {
+  const formCheck = input.parentElement;
+  formCheck.className = 'formCheck success';
+  }
+  
+  function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+  }
+  
+    </script>
+  </div>
+  </body>
+    </html>
